@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import {useState,useEffect} from 'react';
 import axios from 'axios';
-import {button} from 'bootstrap'
 
 function App(){
   const url = 'https://api.quotable.io/random'
