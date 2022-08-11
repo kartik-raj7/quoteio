@@ -14,6 +14,7 @@ function App(){
     console.log(quote)
   })
 };
+const text = quote.text;
   useEffect(()=>{
     getQuote();
   },[]);
@@ -31,8 +32,8 @@ function App(){
     <div className='btn-cont'>
     <button className='btn'onClick={()=>getQuote()}>New Quote</button>
     <button className='btn'>
-    <a href={`http://twitter.com/intent/tweet?=${quote.text}`}
-    target="_blank" rel = "noopener noreferrer" >Tweet</a>
+    <a href={`https://twitter.com/intent/tweet?text=${quote.content}`}
+    target="_blank" >Tweet</a>
     </button>
     </div>
     </div>
