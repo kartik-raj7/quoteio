@@ -33,6 +33,10 @@ const text = quote.text;
     <a href={`https://twitter.com/intent/tweet?text=${quote.content}`}
     target="_blank" >Tweet</a>
     </button>
+    <button className='btn'>
+    <a href={`https://wa.me/?text=${quote.content}`}
+    target="_blank" >Whatsapp</a>
+    </button>
     </div>
     </div>
   </div>    

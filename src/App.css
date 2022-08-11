@@ -42,18 +42,22 @@ a{
   color:black
 }
 .btn{
+display: flexbox;
  background-color: aqua;
- margin-left: 30px;
- margin-right: 30px;
+ margin-left: 10px;
+ margin-right: 10px;
  width:80px;
  color:black;
  padding: 10px 0;
  cursor:pointer;
  transition: all 500ms ease-in-out;
- border-radius: 4px;
+ border-radius: 10px;
 }
 .btn:hover{
   background-color: white;
+}
+.btn-cont{
+ display: block;
 }
 /* .btn-cont{
   
