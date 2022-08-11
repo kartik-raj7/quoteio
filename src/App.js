@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState,useEffect} from 'react';
-import {BrowserRouter as Router,Route,Routes,Link} from 'react-router-dom'
 import axios from 'axios';
 import User from './User';
+import {button} from 'bootstrap'
 
 function App(){
   const url = 'https://api.quotable.io/random'
@@ -23,15 +23,16 @@ function App(){
  return(
   <div className='App'>
     <div className='quote'>
+    <h1>Quote of the Day</h1>
     <p>{quote.content}</p>
-    <p>Author:-  <a href={`https://en.wikipedia.org/wiki/${quote.author}`}>{quote.author}</a></p>
+    <p className='authors'>Author:-  <a className="author" href={`https://en.wikipedia.org/wiki/${quote.author}`}>{quote.author}</a></p>
     
     <br></br>
     <div className='btn-cont'>
     <button className='btn'onClick={()=>getQuote()}>New Quote</button>
-    <button>
+    <button className='btn'>
     <a href={`http://twitter.com/intent/tweet?=${quote.text}`}
-    target="_blank" rel = "noopener noreferrer" className='btn'>Tweet</a>
+    target="_blank" rel = "noopener noreferrer" >Tweet</a>
     </button>
     </div>
     </div>
