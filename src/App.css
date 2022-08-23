@@ -8,6 +8,7 @@
   display: flex;
   background-color: azure;
   background-image: url("images/background.jpg");
+  transition: 0.3s ease-out;
 }
 .App-dark{
   min-height: 100vh;
@@ -15,17 +16,18 @@
   background-color: lightblue;
   background-image: url("images/light.jpg");
   background-size: cover;
+  transition: 0.4s ease-in-out;
 }
 .quote{
   margin: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   min-height: 180px;
   padding: 30px;
   /* background: transparent; */
-  background-color: #ffffff26;  
+  background-color: rgba(155,155,255,0.2);  
   backdrop-filter: blur(5px);
-  border-radius: 4px;
+  border-radius: 7px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +37,7 @@
   font-size: 14px;
 }
 p{
-  color:black;
+  color:grey;
   font-size: 25px;
 }
 .p-dark{
@@ -78,7 +80,7 @@ display: flexbox;
  background-color: aqua;
  margin-left: 10px;
  margin-right: 10px;
- width:80px;
+ width:100px;
  color:black;
  padding: 10px 0;
  cursor:pointer;
@@ -90,6 +92,18 @@ display: flexbox;
 }
 .btn-cont{
  display: block;
+}
+.fa-whatsapp{
+color:green;
+font-size: 20px;
+}
+.fa-twitter{
+  color:darkblue;
+font-size: 18px;
+}
+.fa-instagram{
+  color:blueviolet;
+  font-size: 18px;
 }
 /* .btn-cont{
   

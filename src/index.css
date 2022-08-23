@@ -14,12 +14,20 @@ code {
 .footer{
   /* margin-top: 1rem; */
   /* padding: 1rem; */
+  display: inline-block;
   text-align: center;
   background-color: aqua;
   align-items: center;
   bottom: 0;
   width: 100%;
 }
+/* .footer > div{
+  margin: 0px 6px 0px 6px;
+} */
 .items{
   color:black;
+  font-size: 17px;
+}
+.footer.icon{
+  display: inline-flexbox;
 }

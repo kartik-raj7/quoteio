@@ -25,7 +25,7 @@ const text = quote.text;
         console.log(isdark);
         setButtonText(isdark?" Light ☀️":"Dark 🌑");
   };
-  const [buttonText, setButtonText] = useState('Light');
+  const [buttonText, setButtonText] = useState(' Light ☀️');
 
  return(
   <div className={isdark ? "App-dark" : "App"}>
@@ -41,12 +41,14 @@ const text = quote.text;
     <div className='btn-cont'>
     <button className='btn'onClick={()=>getQuote()}>New Quote</button>
     <button className='btn'>
+    <i class="fa fa-twitter"></i>
     <a href={`https://twitter.com/intent/tweet?text=${quote.content}`}
-    target="_blank" >Tweet</a>
+    target="_blank" > Tweet</a>
     </button>
     <button className='btn'>
-    <a href={`https://wa.me/?text=${quote.content}`}
-    target="_blank" >Whatsapp</a>
+    <i class="fa fa-whatsapp"> </i>
+    <a href={` https://wa.me/?text=${quote.content}`}
+    target="_blank" > Whatsapp</a>
     </button>
     </div>
     </div>
