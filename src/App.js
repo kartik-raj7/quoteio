@@ -16,15 +16,26 @@ const text = quote.text;
   useEffect(()=>{
     getQuote();
   },[]);
+  const [isdark,setdark] = useState(false);
+  // console.log(dark);
 //  },[]);
 // function authorinfo(){
+  function darkmode(){
+        setdark(!isdark);
+        console.log(isdark);
+        setButtonText(isdark?" Light ☀️":"Dark 🌑");
+  };
+  const [buttonText, setButtonText] = useState('Light');
 
  return(
-  <div className='App'>
-    <div className='quote'>
+  <div className={isdark ? "App-dark" : "App"}>
+    <div className="quote">
+    {/* <input type="checkbox"onChange={()=>darkmode()}></input>
+    <label ></label><br></br> */}
+    <button className={isdark ? "btn-dark" : "btn-l"}onClick={()=>darkmode()}>{buttonText}</button>
     <h1>Quote of the Day</h1>
-    <p>{quote.content}</p>
-    <p className='authors'>Author:-  <a className="author" href={`https://en.wikipedia.org/wiki/${quote.author}`}>{quote.author}</a></p>
+    <p className={isdark?"p":"p-dark"}>{quote.content}</p>
+    <p className="authors">Author:-  <a className={isdark?"a":"a-d"} href={`https://en.wikipedia.org/wiki/${quote.author}`}>{quote.author}</a></p>
     
     <br></br>
     <div className='btn-cont'>
@@ -39,7 +50,7 @@ const text = quote.text;
     </button>
     </div>
     </div>
-  </div>    
+  </div> 
  );
 }
 export default App;
