@@ -64,14 +64,14 @@ a{
   color:white;
 }
 .btn-dark{
-  background-color: white;
-  border-radius: 5px;
-  color:aqua;
-}
-.btn-dark{
-  background-color:black;
+  background-color: black;
   border-radius: 5px;
   color:white;
+}
+.btn-l{
+  background-color:white;
+  border-radius: 5px;
+  color:black;
 }
 .btn{
 display: flexbox;
